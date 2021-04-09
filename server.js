@@ -32,9 +32,8 @@ app.use(cors());
 // mount our routes with app.use
 app.use('/api/workouts', require('./routes/api/workouts'));
 
-
 // tell the app to listen on port 3001
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 3001
 app.listen(port, () => {
     console.log(`Express is listening for AJAX request on port ${port}`);
 });
